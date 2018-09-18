@@ -1,6 +1,7 @@
-package Kapittel_1
+package Kapittel_1;
 
 public class ukeoppgaver5 {
+
 
 }
 
