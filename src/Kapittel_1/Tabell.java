@@ -26,6 +26,7 @@ public class Tabell {
                     ("fra(" + fra + ") = til(" + til + ") - tomt tabellintervall!");
     }
 
+
     public static void vhKontroll(int tablengde, int v, int h) {
         if (v < 0) {
             throw new ArrayIndexOutOfBoundsException("v(" + v + ") < 0");
