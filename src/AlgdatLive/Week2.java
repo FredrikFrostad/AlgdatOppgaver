@@ -28,3 +28,4 @@ public class Week2 {
         System.out.println(x + " " + y + " " + z);
     }
 }
+
