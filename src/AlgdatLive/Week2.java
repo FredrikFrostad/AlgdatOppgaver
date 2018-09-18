@@ -17,6 +17,7 @@ public class Week2 {
         return m;
     }
 
+
     public static void main(String[] args) {
         int[] a = {1,3,7,5,40,8,9,12};
 
