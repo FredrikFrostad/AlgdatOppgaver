@@ -399,4 +399,18 @@ public class Tabell {
         }
         return m;  // returnerer posisjonen til største verdi
     }
+
+    public static int maks(char[] a) {
+
+        int m = 0;
+        char maksverdi = a[0];
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > maksverdi) {
+                maksverdi = a[i];
+                m = i;
+            }
+        }
+        return m;
+    }
 }
