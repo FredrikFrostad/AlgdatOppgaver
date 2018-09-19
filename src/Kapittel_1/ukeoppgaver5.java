@@ -1,9 +1,6 @@
 package Kapittel_1;
 
-import Eksempelklasser.Heltall;
-import Eksempelklasser.Måned;
-import Eksempelklasser.Person;
-import Eksempelklasser.Studium;
+import Eksempelklasser.*;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -219,7 +216,7 @@ public class ukeoppgaver5 {
         }
 
         /**
-         * 1.4.5_1:
+         * 1.4.5:
          *
          * a) OK
          *
@@ -246,11 +243,122 @@ public class ukeoppgaver5 {
 
         // c
         {
+            System.out.println("\n B: \n");
+
             for (Måned m : Måned.values()) {
                 System.out.println(m.toString());
                 System.out.println(m.ordinal()+1);
             }
         }
+
+        // d
+
+        {
+
+            System.out.println("\n D: \n");
+
+            Student[] s = new Student[5];  // en Studenttabell
+
+            s[0] = new Student("Kari", "Svendsen", Studium.Data);    // Kari Svendsen
+            s[1] = new Student("Boris", "Zukanovic", Studium.IT);    // Boris Zukanovic
+            s[2] = new Student("Ali", "Kahn", Studium.Anvendt);      // Ali Kahn
+            s[3] = new Student("Azra", "Zukanovic", Studium.IT);     // Azra Zukanovic
+            s[4] = new Student("Kari", "Pettersen", Studium.Data);   // Kari Pettersen
+
+            Tabell.innsettingssortering(s);                     // Programkode 1.4.2 e)
+            for (Student t : s) System.out.println(t);
+
+            // Utskrift:
+            // Ali Kahn Anvendt
+            // Kari Pettersen Data
+            // Kari Svendsen Data
+            // Azra Zukanovic IT
+            // Boris Zukanovic I
+        }
+
+        /**
+         * Oppgave 1.4.6:
+         *
+         * 1) OK - alle metoder lagt in og kjørt
+         *
+         * 2)
+         */
+
+        System.out.println("\n Oppgave 1.4.6: \n");
+
+        // Oppgave 1:
+        {
+            Person[] p = new Person[5];                       // en persontabell
+            p[0] = new Person("Kari", "Svendsen");            // Kari Svendsen
+            p[1] = new Person("Boris", "Zukanovic");          // Boris Zukanovic
+            p[2] = new Person("Ali", "Kahn");                 // Ali Kahn
+            p[3] = new Person("Azra", "Zukanovic");           // Azra Zukanovic
+            p[4] = new Person("Kari", "Pettersen");           // Kari Pettersen
+
+            class FornavnKomparator implements Komparator<Person>
+            {
+                public int compare(Person p1, Person p2)        // to personer
+                {
+                    return p1.fornavn().compareTo(p2.fornavn());  // sammenligner fornavn
+                }
+            }
+
+            Komparator<Person> c = new FornavnKomparator();   // en instans av klassen
+            Tabell.innsettingssortering(p, c);                // se Programkode 1.4.6 b)
+
+            System.out.println(Arrays.toString(p));           // Utskrift av tabellen p
+            // [Ali Kahn, Azra Zukanovic, Boris Zukanovic, Kari Svendsen, Kari Pettersen]
+
+        }
+        System.out.println("\nSamme sammenlikning, men skrevet med en lambda: ");
+        {
+            Person[] p = new Person[5];                       // en persontabell
+            p[0] = new Person("Kari", "Svendsen");            // Kari Svendsen
+            p[1] = new Person("Boris", "Zukanovic");          // Boris Zukanovic
+            p[2] = new Person("Ali", "Kahn");                 // Ali Kahn
+            p[3] = new Person("Azra", "Zukanovic");           // Azra Zukanovic
+            p[4] = new Person("Kari", "Pettersen");           // Kari Pettersen
+
+            Komparator<Person> c = (p1, p2) -> p1.fornavn().compareTo(p2.fornavn());
+            System.out.println(Arrays.toString(p));           // Utskrift av tabellen p
+
+            System.out.println("\nOg til slutt med lamda som argument: ");
+            Tabell.innsettingssortering(p, (p1,p2) -> p1.fornavn().compareTo(p2.fornavn()));
+            System.out.println(Arrays.toString(p));
+        }
+
+        // Oppgave 2:
+        System.out.println("\nDeloppgave 2, lambdametode i innsettsortering: ");
+        System.out.println("\nSortert etter naturlig orden for enum Studium: ");
+        {
+            Student[] s = new Student[5];                             // en studenttabell
+            s[0] = new Student("Kari","Svendsen", Studium.Data);      // Kari Svendsen
+            s[1] = new Student("Boris","Zukanovic", Studium.IT);      // Boris Zukanovic
+            s[2] = new Student("Ali","Kahn", Studium.Anvendt);        // Ali Kahn
+            s[3] = new Student("Azra","Zukanovic", Studium.IT);       // Azra Zukanovic
+            s[4] = new Student("Kari","Pettersen", Studium.Data);     // Kari Pettersen
+
+            Tabell.innsettingssortering(s, (s1,s2) -> s1.studium().compareTo(s2.studium()));
+            System.out.println(Arrays.toString(s));
+
+            System.out.println("\nVi ordner på samme måte med annen kode: ");
+
+            Komparator<Student> c = (s1,s2) ->
+            {
+                int cmp = s1.studium().compareTo(s2.studium());
+                return cmp != 0 ? cmp : s1.compareTo(s2);
+            };
+
+            Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
+            System.out.println(Arrays.toString(s));
+
+            System.out.println("\nTil slutt dropper vi komparatorvariablen c," +
+                    " og lar lambdauttrykket inngå direkte som parameter: ");
+
+            Tabell.innsettingssortering(s, (s1,s2) -> s1.studium().compareTo(s2.studium()));
+            System.out.println(Arrays.toString(s));
+        }
+
     }
 
 
