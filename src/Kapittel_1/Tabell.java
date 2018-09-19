@@ -404,20 +404,6 @@ public class Tabell {
     }
 */
 
-    public static int maks(char[] a) {
-
-        int m = 0;
-        char maksverdi = a[0];
-
-        for (int i = 1; i < a.length; i++) {
-            if (a[i] > maksverdi) {
-                maksverdi = a[i];
-                m = i;
-            }
-        }
-        return m;
-    }
-
     public static <T extends Comparable<? super T>> int maks(T[] a)
     {
         int m = 0;                     // indeks til største verdi
@@ -456,6 +442,34 @@ public class Tabell {
 
             a[j + 1] = verdi;      // j + 1 er rett sortert plass
         }
+    }
+
+    public static int maks(char[] a) {
+
+        int m = 0;
+        char maksverdi = a[0];
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > maksverdi) {
+                maksverdi = a[i];
+                m = i;
+            }
+        }
+        return m;
+    }
+
+    public static <T> int maks(T[] a, Komparator<? super T> c) {
+
+        T maksverdi = a[0];
+        int index = 0;
+
+        for (int i = 1; i < a.length; i++) {
+            if (c.compare(a[i],maksverdi) > 0) {
+                maksverdi = a[i];
+            }
+        }
+
+        return index;
     }
 
     public static Integer[] randPermInteger(int n)

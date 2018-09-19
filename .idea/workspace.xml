@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="1.4.5.d">
-      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/Komparator.java" afterDir="false" />
+    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="Oppgave 1.4.6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Tabell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Tabell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Forelesning1/Kapittel_1/Tabell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Forelesning1/Kapittel_1/Tabell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kapittel_1/Tabell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/Tabell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" afterDir="false" />
     </list>
@@ -25,14 +26,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5103" />
-          <entry key="txt" value="38" />
+          <entry key="java" value="6183" />
+          <entry key="txt" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5103" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="JAVA" value="6183" />
+          <entry key="PLAIN_TEXT" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="358" column="51" lean-forward="true" selection-start-line="358" selection-start-column="51" selection-end-line="358" selection-end-column="51" />
+            <state relative-caret-position="510">
+              <caret line="400" column="12" lean-forward="true" selection-start-line="400" selection-start-column="12" selection-end-line="400" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="461" column="5" lean-forward="true" selection-start-line="461" selection-start-column="5" selection-end-line="461" selection-end-column="5" />
+            <state relative-caret-position="2886">
+              <caret line="518" column="9" lean-forward="true" selection-start-line="518" selection-start-column="9" selection-end-line="518" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -237,7 +238,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537385927323" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537389274979" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -412,7 +413,7 @@
       <workItem from="1536908389828" duration="109000" />
       <workItem from="1537097783623" duration="11630000" />
       <workItem from="1537306086144" duration="148000" />
-      <workItem from="1537345261523" duration="18047000" />
+      <workItem from="1537345261523" duration="21149000" />
     </task>
     <task id="LOCAL-00001" summary="la til metoder fra kap 1.4.1">
       <created>1537261058207</created>
@@ -442,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537374691998</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Oppgave 1.4.6">
+      <created>1537385960960</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537385960960</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -466,7 +474,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121647000" />
+    <option name="totallyTimeSpent" value="124749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1926" y="-606" width="972" height="1046" extended-state="0" />
@@ -541,7 +549,8 @@
     <MESSAGE value="la til metoder fra kap 1.4.1" />
     <MESSAGE value="Begynt på oppgave 1.4.5" />
     <MESSAGE value="1.4.5.d" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.4.5.d" />
+    <MESSAGE value="Oppgave 1.4.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oppgave 1.4.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -693,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="461" column="5" lean-forward="true" selection-start-line="461" selection-start-column="5" selection-end-line="461" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Komparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -707,10 +709,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2886">
+          <caret line="518" column="9" lean-forward="true" selection-start-line="518" selection-start-column="9" selection-end-line="518" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="358" column="51" lean-forward="true" selection-start-line="358" selection-start-column="51" selection-end-line="358" selection-end-column="51" />
+        <state relative-caret-position="510">
+          <caret line="400" column="12" lean-forward="true" selection-start-line="400" selection-start-column="12" selection-end-line="400" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -281,7 +281,9 @@ public class ukeoppgaver5 {
          *
          * 1) OK - alle metoder lagt in og kjørt
          *
-         * 2)
+         * 2) OK - alle metoder lagt inn, kjørt og endret pr oppgave
+         *
+         * 3)
          */
 
         System.out.println("\n Oppgave 1.4.6: \n");
@@ -352,15 +354,68 @@ public class ukeoppgaver5 {
             Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
             System.out.println(Arrays.toString(s));
 
-            System.out.println("\nTil slutt dropper vi komparatorvariablen c," +
+            System.out.println("\nVi dropper komparatorvariablen c," +
                     " og lar lambdauttrykket inngå direkte som parameter: ");
 
             Tabell.innsettingssortering(s, (s1,s2) -> s1.studium().compareTo(s2.studium()));
             System.out.println(Arrays.toString(s));
+
+            // Oppgave 3 - lag et lambdauttrykk som ordner studentene etter studium,
+            //fornavn og etternavn:
+
+            System.out.println("\nLambda som sorterer på studium, fornavn " +
+                    "etternavn: ");
+            Tabell.innsettingssortering(s, (s1,s2) -> {
+               int result = s1.studium().compareTo(s2.studium());
+               if (result == 0) {return result;}
+               result = s1.fornavn().compareTo(s2.fornavn());
+               if (result == 0) {return result;}
+               return s1.etternavn().compareTo(s2.etternavn());
+            });
+            System.out.println(Arrays.toString(s));
         }
 
+        //Oppgave 5:
+        //Lag en lambda slik at like lange strenger ordnes alfabetisk(lexikografisk)
+        System.out.println("\nOppgave 5:");
+        {
+            //String[] s = {"Lars","Anders","Bodil","Kari","Per","Berit"};
+            String[] s = {"21","18","8","13","20","6","16","25","3","10"};
+            Tabell.innsettingssortering(s, (s1,s2) -> {
+                int result = s1.length() - s2.length();
+                if (result != 0) {return result;}
+                return s1.compareTo(s2);
+
+            });
+
+            System.out.println(Arrays.toString(s));
+            // Utskrift: [Per, Lars, Kari, Bodil, Berit, Anders]
+        }
+
+        //Oppgave 7:
+        //Endre lambda konstruksjonen i 1.4.6h slik at studiene ordnes alfabetisk etter
+        //navn
+
+        System.out.println("\nOppgave 7: ");
+        {
+
+            Student[] s = new Student[5];                             // en studenttabell
+            s[0] = new Student("Kari","Svendsen", Studium.Data);      // Kari Svendsen
+            s[1] = new Student("Boris","Zukanovic", Studium.IT);      // Boris Zukanovic
+            s[2] = new Student("Ali","Kahn", Studium.Anvendt);        // Ali Kahn
+            s[3] = new Student("Azra","Zukanovic", Studium.IT);       // Azra Zukanovic
+            s[4] = new Student("Kari","Pettersen", Studium.Data);     // Kari Pettersen
+
+
+            Komparator<Student> c = (s1,s2) ->
+            {
+                int cmp = s1.studium().toString().compareTo(s2.studium().toString());
+                return cmp != 0 ? cmp : s1.compareTo(s2);
+            };
+
+            Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
+            System.out.println(Arrays.toString(s));
+        }
     }
-
-
 }
 
