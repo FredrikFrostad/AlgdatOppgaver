@@ -1,29 +1,31 @@
 package Kapittel_1;
 
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Program {
 
     public static void main(String[] args) {
 
-        int[] a = Tabell.randPerm(10);
+        String[] s = {"Sohil","Per","Thanh","Fatima","Kari","Jasmin"};
+        int k = Tabell.maks(s);        // hvilken maks-metode?
+        System.out.println(s[k]);      // Utskrift:  Thanh
 
-        System.out.println("Tabell før turnering: ");
-        Tabell.skrivLn(a);
+        String[] t = {"Per","Kari","Ole","Anne","Ali","Eva", "Rodney", "William", "Espen",
+                "Jonathan", "Else", "Margrete", "Sasha", "Rocco"};
+        Tabell.innsettingssortering(t);
+        System.out.println(Arrays.toString(t));  // [Ali, Anne, Eva, Kari, Ole, Per]
 
-        int[] b = Tabell.nestMaks(a);
-
-        Tabell.skrivLn(b);
-
-        int[] e = {-7,3,2,6,-8,-9,5,1,2,8,13,-4};
-
-        Tabell.sortering(e);
-
-        System.out.println();
-        for (int i:e) {
-            System.out.print(i + " ");
+        double[] d = {5.7,3.14,7.12,3.9,6.5,7.1,7.11};
+        System.out.println(d.length);
+        Double[] b = new Double[d.length];
+        for (int i = 0; i < d.length; i++) {
+            b[i] = d[i];
         }
+            Tabell.innsettingssortering(b);
+            Tabell.skriv(b);
+
     }
 }
 

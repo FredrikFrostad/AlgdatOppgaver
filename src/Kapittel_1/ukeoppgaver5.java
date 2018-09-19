@@ -1,5 +1,13 @@
 package Kapittel_1;
 
+import Eksempelklasser.Heltall;
+import Eksempelklasser.Person;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Optional;
+import java.util.stream.Stream;
+
 public class ukeoppgaver5 {
 
     public static void main(String[] args) {
@@ -58,8 +66,168 @@ public class ukeoppgaver5 {
          */
 
         {
-            System.out.println("Boolean comparator: " + Boolean.compare(false,true));
+            System.out.println("Boolean comparator: " + Boolean.compare(false, true));
         }
+
+        /**
+         * Oppgave 1.4.4_1:
+         * a) OK
+         *
+         * b)OK
+         *
+         * c) Det fungerer matematisk og returnere verdi - h.verdi, fordi vi får
+         * negativt fortegn dersom verdi < h.verdi, 0 dersom verdi == h.verdi og
+         * positivt fortegn dersom verdi > h.verdi.
+         *
+         * Men siden vi bruker int som datatype, kan vi få problemer dersom vi overflyter
+         * størrelsen som kan representeres ved 32bit signert to-komplement
+         *
+         * d) Koden i oppgave d skriver som forventet ut 0 og true
+         *
+         * e) Siden verdiene til både x og y er like, vil det skrives ut en identisk
+         * hash for begge objektene.
+         */
+        System.out.println("\n Oppgave 1.4.4_1: ");
+        {
+            //a
+            int[] a = {5, 2, 7, 3, 9, 1, 8, 10, 4, 6};          // en int-tabell
+            Heltall[] h = new Heltall[a.length];       // en Heltall-tabell
+
+            //b
+            for (int i = 0; i < h.length; i++) h[i] = new Heltall(a[i]);
+            Tabell.innsettingssortering(h);           // generisk sortering
+            System.out.println(Arrays.toString(h));   // utskrift}
+
+            //d
+            Heltall x = new Heltall(3), y = new Heltall(3);  // x og y er like
+            System.out.println(x.compareTo(y) + "  " + x.equals(y));
+
+            //e
+            System.out.println(x.hashCode() + "  " + y.hashCode());
+        }
+
+        /**
+         * Oppgave 1.4.4_2:
+         *
+         * a) OK
+         *
+         * b) OK
+         *
+         * c) OK
+         *
+         * d) OK
+         *
+         * e) OK
+         *
+         * f) OK
+         *
+         * g) OK (lest, ikke relevant for intellij)
+         *
+         * h) OK Implementert toString metode i Eksempelklasse Person
+         * Delimiter parameter definerer skilletegn
+         *
+         * i)
+         */
+
+
+        System.out.println("\n Oppgave 1.4.4_1 \n");
+
+        //a, b
+        {
+        Person[] p = new Person[8];                   // en persontabell
+
+        p[0] = new Person("Kari","Svendsen");         // Kari Svendsen
+        p[1] = new Person("Boris","Zukanovic");       // Boris Zukanovic
+        p[2] = new Person("Ali","Kahn");              // Ali Kahn
+        p[3] = new Person("Azra","Zukanovic");        // Azra Zukanovic
+        p[4] = new Person("Kari","Pettersen");        // Kari Pettersen
+        p[5] = new Person("Karianne", "Trulsen");
+        p[6] = new Person("Kjell", "Trulsen");
+        p[7] = new Person("Ulf", "Lundell");
+
+
+
+            int m = Tabell.maks(p);                       // posisjonen til den største
+            System.out.println(p[m] + " er størst");      // skriver ut den største
+
+            Tabell.innsettingssortering(p);// generisk sortering
+            System.out.println("Innsettingssortering: ");
+            System.out.println(Arrays.toString(p));       // skriver ut sortert
+
+            // Utskrift:
+
+            // Boris Zukanovic er størst
+            // [Ali Kahn, Kari Pettersen, Kari Svendsen, Azra Zukanovic, Boris Zukanovic]
+        }
+
+        // c
+        {
+            Person[] p = new Person[8];                   // en persontabell
+
+            p[0] = new Person("Kari","Svendsen");         // Kari Svendsen
+            p[1] = new Person("Boris","Zukanovic");       // Boris Zukanovic
+            p[2] = new Person("Ali","Kahn");              // Ali Kahn
+            p[3] = new Person("Azra","Zukanovic");        // Azra Zukanovic
+            p[4] = new Person("Kari","Pettersen");        // Kari Pettersen
+            p[5] = new Person("Karianne", "Trulsen");
+            p[6] = new Person("Kjell", "Trulsen");
+            p[7] = new Person("Ulf", "Lundell");
+
+            System.out.println("Arrays.sort: ");
+            Arrays.sort(p);
+            System.out.println(Arrays.toString(p));
+        }
+
+        // h
+        {
+            Person p = new Person("Anders", "Bardal");
+            System.out.println(p.toString());
+        }
+        // i og j
+        {
+            Person[] p = new Person[8];                   // en persontabell
+
+            p[0] = new Person("Kari","Svendsen");         // Kari Svendsen
+            p[1] = new Person("Boris","Zukanovic");       // Boris Zukanovic
+            p[2] = new Person("Ali","Kahn");              // Ali Kahn
+            p[3] = new Person("Azra","Zukanovic");        // Azra Zukanovic
+            p[4] = new Person("Kari","Pettersen");        // Kari Pettersen
+            p[5] = new Person("Karianne", "Trulsen");
+            p[6] = new Person("Kjell", "Trulsen");
+            p[7] = new Person("Ulf", "Lundell");
+
+
+
+            int m = Tabell.maks(p);                       // posisjonen til den største
+            System.out.println(p[m] + " er størst");      // skriver ut den største
+
+            Tabell.innsettingssortering(p);// generisk sortering
+            System.out.println(Arrays.toString(p));       // skriver ut sortert
+
+            System.out.println("ekstra kodelinjer: ");
+
+            /*
+            Stream s = Arrays.stream(p);
+            Optional<Person> resultat = s.max(Comparator.naturalOrder());
+            resultat.ifPresent(System.out::println);
+            */
+            //Utkommentert kodeblokk skrevet som en linje,
+            //Merk at det er høyresiden av tillordningene som brukes
+            Arrays.stream(p).max(Comparator.naturalOrder()).ifPresent(System.out::println);
+        }
+
+        /**
+         * 1.4.5_1:
+         *
+         * a)
+         */
+
+        System.out.println("\n Oppgave 1.4.5: \n");
+
+
+
     }
+
+
 }
 
