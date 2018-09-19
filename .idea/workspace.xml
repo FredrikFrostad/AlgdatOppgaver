@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/Heltall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/Person.java" afterDir="false" />
+    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="Begynt på oppgave 1.4.5">
+      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/Måned.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Forelesning1/AlgdatLive/Week4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning1/AlgdatLive/Week4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Tabell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Tabell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Forelesning1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Forelesning1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Forelesning1/AlgdatLive/Week4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Forelesning1/AlgdatLive/Week4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Forelesning1/Kapittel_1/Tabell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Forelesning1/Kapittel_1/Tabell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kapittel_1/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kapittel_1/Tabell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/Tabell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Eksempelklasser/Studium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eksempelklasser/Studium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,22 +25,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3233" />
+          <entry key="java" value="4410" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3233" />
+          <entry key="JAVA" value="4410" />
+          <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -67,14 +61,42 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
+            <state relative-caret-position="612">
+              <caret line="250" column="50" selection-start-line="250" selection-start-column="50" selection-end-line="250" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Måned.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="681">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1170#1171#0" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
+                <element signature="e#1250#1251#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Studium.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -163,7 +185,10 @@
         <option value="$PROJECT_DIR$/src/Kapittel_1/Program.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Heltall.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Person.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Maaned.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Måned.java" />
         <option value="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Studium.java" />
       </list>
     </option>
   </component>
@@ -221,6 +246,12 @@
               <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Eksempelklasser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Kapittel_1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -244,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537363260826" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537374646038" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -419,7 +450,7 @@
       <workItem from="1536908389828" duration="109000" />
       <workItem from="1537097783623" duration="11630000" />
       <workItem from="1537306086144" duration="148000" />
-      <workItem from="1537345261523" duration="10928000" />
+      <workItem from="1537345261523" duration="14851000" />
     </task>
     <task id="LOCAL-00001" summary="la til metoder fra kap 1.4.1">
       <created>1537261058207</created>
@@ -435,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537265138597</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Begynt på oppgave 1.4.5">
+      <created>1537363356046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537363356046</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -459,7 +497,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114528000" />
+    <option name="totallyTimeSpent" value="118451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1926" y="-606" width="972" height="1046" extended-state="0" />
@@ -532,7 +570,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="la til metoder fra kap 1.4.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="la til metoder fra kap 1.4.1" />
+    <MESSAGE value="Begynt på oppgave 1.4.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begynt på oppgave 1.4.5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -662,11 +701,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
+        <state relative-caret-position="612">
+          <caret line="250" column="50" selection-start-line="250" selection-start-column="50" selection-end-line="250" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Måned.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Studium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
         </state>
       </provider>
     </entry>

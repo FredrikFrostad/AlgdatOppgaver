@@ -1,7 +1,9 @@
 package Kapittel_1;
 
 import Eksempelklasser.Heltall;
+import Eksempelklasser.Måned;
 import Eksempelklasser.Person;
+import Eksempelklasser.Studium;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -219,13 +221,36 @@ public class ukeoppgaver5 {
         /**
          * 1.4.5_1:
          *
-         * a)
+         * a) OK
+         *
+         * b) OK
+         *
+         * c)
          */
 
         System.out.println("\n Oppgave 1.4.5: \n");
 
+        // a
+        {
+            System.out.println("\n A: \n");
 
+            for (Studium s : Studium.values())
+            {
+                System.out.println(s.toString() + " (" + s.name() + ")");
+            }
+            // Ingeniørfag - data (Data)
+            // Informasjonsteknologi (IT)
+            // Anvendt datateknologi (Anvendt)
+            // Enkeltemnestudent (Enkeltemne)
+        }
 
+        // c
+        {
+            for (Måned m : Måned.values()) {
+                System.out.println(m.toString());
+                System.out.println(m.ordinal()+1);
+            }
+        }
     }
 
 
