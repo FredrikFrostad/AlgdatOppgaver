@@ -3,6 +3,7 @@ package Kapittel_1;
 import Eksempelklasser.Komparator;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
@@ -430,6 +431,8 @@ public class Tabell {
         }
     }
 
+    /*
+    //Bruker egendefinert komparator
     public static <T> void innsettingssortering(T[] a, Komparator<? super T> c)
     {
         for (int i = 1; i < a.length; i++)  // starter med i = 1
@@ -442,6 +445,46 @@ public class Tabell {
 
             a[j + 1] = verdi;      // j + 1 er rett sortert plass
         }
+    }
+*/
+    //Bruker java.utils.Comparator
+    public static <T> void innsettingssortering(T[] a, Comparator<? super T> c)
+    {
+        for (int i = 1; i < a.length; i++)  // starter med i = 1
+        {
+            T verdi = a[i];        // verdi er et tabellelemnet
+            int  j = i - 1;        // j er en indeks
+
+            // sammenligner og forskyver:
+            for (; j >= 0 && c.compare(verdi,a[j]) < 0 ; j--) a[j+1] = a[j];
+
+            a[j + 1] = verdi;      // j + 1 er rett sortert plass
+        }
+    }
+
+    public static <T> int maks(T[] a, Comparator<? super T> c) {
+
+        return 0;
+    }
+
+    public static <T> int maks(T[] a, int fra, int til, Comparator<? super T> c) {
+
+        fratilKontroll(a.length, fra, til);
+
+        if (fra == til) {
+            throw new NoSuchElementException
+                    ("tomt tabellintervall!");
+        }
+            int m = fra;
+            T maksverdi = a[fra];
+
+            for (int i = fra + 1; i < til; i++) {
+                if (c.compare(a[i], maksverdi) > 0) {
+                    maksverdi = a[i];
+                    m = i;
+                }
+            }
+        return m;
     }
 
     public static int maks(char[] a) {

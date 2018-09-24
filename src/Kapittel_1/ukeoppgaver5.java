@@ -150,7 +150,7 @@ public class ukeoppgaver5 {
             System.out.println(p[m] + " er størst");      // skriver ut den største
 
             Tabell.innsettingssortering(p);// generisk sortering
-            System.out.println("Innsettingssortering: ");
+            System.out.println("innsettingssortering: ");
             System.out.println(Arrays.toString(p));       // skriver ut sortert
 
             // Utskrift:
@@ -306,7 +306,7 @@ public class ukeoppgaver5 {
             }
 
             Komparator<Person> c = new FornavnKomparator();   // en instans av klassen
-            Tabell.innsettingssortering(p, c);                // se Programkode 1.4.6 b)
+            //Tabell.innsettingssortering(  p, c);                // se Programkode 1.4.6 b)
 
             System.out.println(Arrays.toString(p));           // Utskrift av tabellen p
             // [Ali Kahn, Azra Zukanovic, Boris Zukanovic, Kari Svendsen, Kari Pettersen]
@@ -351,7 +351,7 @@ public class ukeoppgaver5 {
                 return cmp != 0 ? cmp : s1.compareTo(s2);
             };
 
-            Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
+            //Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
             System.out.println(Arrays.toString(s));
 
             System.out.println("\nVi dropper komparatorvariablen c," +
@@ -413,7 +413,7 @@ public class ukeoppgaver5 {
                 return cmp != 0 ? cmp : s1.compareTo(s2);
             };
 
-            Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
+            //Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
             System.out.println(Arrays.toString(s));
         }
 
@@ -453,7 +453,7 @@ public class ukeoppgaver5 {
                 return s1.compareTo(s2);
             });
 
-            System.out.println("\nInnsettingssortering naturlig orden: ");
+            System.out.println("\ninnsettingssortering naturlig orden: ");
             System.out.println(Arrays.toString(b));
         }
 
@@ -470,7 +470,7 @@ public class ukeoppgaver5 {
             //Sortering via en orden teknikk:
             //Tabell.innsettingssortering(p, Komparator.orden(s1 -> s1.etternavn().toString()));
             //Dette kan skrives enda enklere:
-            Tabell.innsettingssortering(p, Komparator.orden(Person::etternavn));
+            //Tabell.innsettingssortering(p, Komparator.orden(Person::etternavn));
 
             System.out.println(Arrays.toString(p));
 
@@ -492,17 +492,64 @@ public class ukeoppgaver5 {
         /**
          * Oppgave 1.4.8
          *
+         * Oppg 1: Lagt inn kode i komparator klasse
          *
+         * Oppg 2: Blir Komparator.orden(x -> x) og
+         * Komparator.naturligOrden() det samme? Forklar!
+         *
+         * rett fra fasit:
+         *
+         *Lambda-uttrykket x -> x representerer det som i matematikk kalles
+         * identitetsfunksjonen, dvs. funksjonen f som er slik at f(x) = x.
+         * Det betyr at det ordnes mhp. x og det er samme som naturlig ordning
+         * siden x er en instans av en sammenlignbar type.
+         * Dermed er Komparator.orden(x -> x) og Komparator.naturligOrden() det samme.
          */
 
         System.out.println("\n *********** OPPGAVE 1.4.8 **************");
 
-        System.out.println("\n Oppgave 1");
+        System.out.println("\n Oppgave 3: \n");
 
         {
+            Komparator<Integer> c = (x,y) ->
+            {
+                if (((x - y) & 1) == 0) return 0;  // x og y oddetall eller x og y partall
+                else if ((x & 1) == 0) return 1;   // x partall og y oddetall
+                else return -1;                    // x oddetall og y partall
+            };
 
+            Integer[] b = {6,2,7,1,9,5,10,8,4,3};
+            //Tabell.innsettingssortering(b, c.deretter(x -> x));
+
+            System.out.println(Arrays.toString(b));
         }
 
+        System.out.println("\n Oppgave 4: \n");
+
+        {
+            String[] s = {"21","18","8","13","20","6","16","25","3","10","110","150","100"};
+            //Tabell.innsettingssortering(s, Komparator.orden(String::length).deretter(x -> x));
+
+            System.out.println(Arrays.toString(s));
+        }
+
+        System.out.println("\n *********** OPPGAVE 1.4.9 **************");
+
+        /**
+         * Oppgave 1: Har implementert Comparator i alle metoder som tidligere
+         * brukte Komparator.
+         *
+         * Oppgave 2:
+         */
+
+        System.out.println("\n Oppgave 1: \n");
+
+        {
+            String[] s = {"Sohil","Per","Thanh","Ann","Kari","Jon"};       // String-tabell
+            Comparator<String> c =  Comparator.comparing(String::length);  // etter lengde
+            Tabell.innsettingssortering(s, c.thenComparing(x -> x));       // vanlig orden
+            System.out.println(Arrays.toString(s));                        // skriver ut
+        }
     }
 }
 

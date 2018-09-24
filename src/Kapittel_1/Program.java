@@ -23,9 +23,14 @@ public class Program {
         for (int i = 0; i < d.length; i++) {
             b[i] = d[i];
         }
-            Tabell.innsettingssortering(b);
-            Tabell.skriv(b);
 
+        //Arrays.stream(d).forEach(e -> System.out.println());
+        Arrays.stream(b).forEach(e -> System.out.println(e));
+
+
+
+            //Tabell.innsettingssortering(b);
+            //Tabell.skriv(b);
     }
 }
 
