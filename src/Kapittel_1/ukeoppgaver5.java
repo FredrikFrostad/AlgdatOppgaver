@@ -416,6 +416,93 @@ public class ukeoppgaver5 {
             Tabell.innsettingssortering(s, c);    // Programkode 1.4.6 b)
             System.out.println(Arrays.toString(s));
         }
+
+        /**
+         * Oppgave 1.4.7:
+         * 1) OK - lagt inn alle interface
+         *
+         *
+         */
+
+        System.out.println("\nOppgave 2:\n");
+
+        {
+            Double[] d = {5.7,3.14,7.12,3.9,6.5,7.1,7.11};
+
+            Tabell.innsettingssortering(d, (s1,s2) ->{
+                return s1.compareTo(s2);
+            });
+
+            System.out.println("\nInsettingssortering naturlig orden; ");
+            System.out.println(Arrays.toString(d));
+
+            Tabell.innsettingssortering(d, (s1,s2) -> {
+                return s2.compareTo(s1);
+            });
+
+            System.out.println("\nInnsttingssortering motsatt orden komparator: ");
+            System.out.println(Arrays.toString(d));
+        }
+
+        System.out.println("\nOppgave 3: \n");
+
+        {
+            Boolean[] b = {false, true, true, false, false, true, false, true};
+
+            Tabell.innsettingssortering(b, (s1,s2) ->  {
+                return s1.compareTo(s2);
+            });
+
+            System.out.println("\nInnsettingssortering naturlig orden: ");
+            System.out.println(Arrays.toString(b));
+        }
+
+        System.out.println("\nOppgave 4:\n ");
+
+        {
+            Person[] p = new Person[5];                       // en persontabell
+            p[0] = new Person("Kari", "Svendsen");            // Kari Svendsen
+            p[1] = new Person("Boris", "Zukanovic");          // Boris Zukanovic
+            p[2] = new Person("Ali", "Kahn");                 // Ali Kahn
+            p[3] = new Person("Azra", "Zukanovic");           // Azra Zukanovic
+            p[4] = new Person("Kari", "Pettersen");           // Kari Pettersen
+
+            //Sortering via en orden teknikk:
+            //Tabell.innsettingssortering(p, Komparator.orden(s1 -> s1.etternavn().toString()));
+            //Dette kan skrives enda enklere:
+            Tabell.innsettingssortering(p, Komparator.orden(Person::etternavn));
+
+            System.out.println(Arrays.toString(p));
+
+            Tabell.innsettingssortering(p, (s1,s2) -> {
+                return s1.etternavn().compareTo(s2.etternavn());
+            });
+
+            System.out.println(Arrays.toString(p));
+        }
+
+        System.out.println("\nOppgave 5: \n");
+
+        {
+            String[] s = {"Lars","Anders","Bodil","Kari","Per","Berit"};
+            Tabell.innsettingssortering(s,(s1,s2) -> s2.length() - s1.length());
+            System.out.println(Arrays.toString(s));
+        }
+
+        /**
+         * Oppgave 1.4.8
+         *
+         *
+         */
+
+        System.out.println("\n *********** OPPGAVE 1.4.8 **************");
+
+        System.out.println("\n Oppgave 1");
+
+        {
+
+        }
+
     }
 }
 
