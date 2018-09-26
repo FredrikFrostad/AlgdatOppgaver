@@ -1,6 +1,9 @@
 package Kapittel_1;
 
 
+import Eksempelklasser.Liste;
+import Eksempelklasser.TabellListe;
+
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Random;
@@ -31,7 +34,17 @@ public class Program {
                 .map(e -> e*2)
                 .forEach(e -> System.out.println(e));
 
+        String[] str = {"Jens","Per","Kari","Ole","Berit","Jens","Anne","Nils","Siv"};
 
+        Liste<String> liste = new TabellListe<>();
+
+        for (String navn : str) liste.leggInn(0,navn);  // legger inn først
+
+        System.out.println("Listeinnhold: " + liste);
+
+        liste.fjernHvis(e -> e.equals("Jens"));
+
+        System.out.println("Listeinnhold: " + liste);
 
 
             //Tabell.innsettingssortering(b);

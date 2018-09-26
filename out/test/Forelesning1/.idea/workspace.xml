@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="Oppgave 1.4.6 er ferdig">
-      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/Funksjon.java" afterDir="false" />
+    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="Jobber med Tabelliste oppgavene">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Forelesning1/Kapittel_1/Tabell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Eksempelklasser/Komparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eksempelklasser/Komparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning1/Kapittel_1/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Forelesning1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Forelesning1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kapittel_1/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/Program.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,35 +15,51 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1013771628">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6924" />
-          <entry key="txt" value="65" />
+          <entry key="java" value="14284" />
+          <entry key="txt" value="185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6924" />
-          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="JAVA" value="14284" />
+          <entry key="PLAIN_TEXT" value="185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="28" />
         </counts>
       </usages-collector>
     </session>
@@ -53,8 +69,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="605">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="88" column="57" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,10 +91,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java">
+        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="439" column="9" lean-forward="true" selection-start-line="439" selection-start-column="9" selection-end-line="439" selection-end-column="9" />
+            <state relative-caret-position="411">
+              <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4393#4394#0" expanded="true" />
+                <element signature="e#4422#4423#0" expanded="true" />
+                <element signature="e#4464#4465#0" expanded="true" />
+                <element signature="e#4531#4532#0" expanded="true" />
+                <element signature="e#4823#4824#0" expanded="true" />
+                <element signature="e#4871#4872#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Beholder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,25 +121,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Komparator.java">
+        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Liste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding>
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="6840">
+              <caret line="528" column="30" selection-start-line="528" selection-start-column="30" selection-end-line="528" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -105,26 +145,43 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>maks</find>
       <find>bytt</find>
       <find>min</find>
       <find>nest</find>
       <find>rand</find>
+      <find>orden</find>
+      <find>inns</find>
+      <find>komparator</find>
+      <find>innset</find>
+      <find>innsett</find>
+      <find>innsettingssortering</find>
+      <find>innsettingssorteringOld</find>
+      <find>maks</find>
+      <find>b</find>
+      <find>next</find>
+      <find>legg</find>
+      <find>foreach</find>
     </findStrings>
+    <replaceStrings>
+      <replace>innsettingssortering</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Eksempelklasser/Komparator.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver6.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver4.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -148,17 +205,22 @@
         <option value="$PROJECT_DIR$/src/AlgdatLive/Week4.java" />
         <option value="$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver4.java" />
         <option value="$PROJECT_DIR$/src/Kapittel_1/testFile.java" />
-        <option value="$PROJECT_DIR$/src/Kapittel_1/Program.java" />
-        <option value="$PROJECT_DIR$/src/Eksempelklasser/Heltall.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Person.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Maaned.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Måned.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Studium.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Student.java" />
-        <option value="$PROJECT_DIR$/src/Kapittel_1/Tabell.java" />
-        <option value="$PROJECT_DIR$/src/Eksempelklasser/Komparator.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/Funksjon.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Komparator.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Heltall.java" />
+        <option value="$PROJECT_DIR$/src/Kapittel_1/Tabell.java" />
+        <option value="$PROJECT_DIR$/src/AlgdatLive/Week6.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Beholder.java" />
         <option value="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Liste.java" />
+        <option value="$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver6.java" />
+        <option value="$PROJECT_DIR$/src/Kapittel_1/Program.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java" />
       </list>
     </option>
   </component>
@@ -168,11 +230,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1253" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -194,6 +255,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Forelesning1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Forelesning1" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,24 +301,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Forelesning1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Forelesning1" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537728375741" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537950549390" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -273,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ukeoppgaver5">
+  <component name="RunManager" selected="Application.Program">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -308,13 +369,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Week3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AlgdatLive.Week3" />
+    <configuration name="Ukeoppgaver6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kapittel_1.Ukeoppgaver6" />
       <module name="Forelesning1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AlgdatLive.*" />
+          <option name="PATTERN" value="Kapittel_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -322,8 +383,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Week4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AlgdatLive.Week4" />
+    <configuration name="Week6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AlgdatLive.Week6" />
       <module name="Forelesning1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -381,18 +442,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Program" />
-      <item itemvalue="Application.Week3" />
-      <item itemvalue="Application.Week4" />
       <item itemvalue="Application.Ukeoppgaver4" />
       <item itemvalue="Application.ukeoppgaver5" />
+      <item itemvalue="Application.Week6" />
+      <item itemvalue="Application.Ukeoppgaver6" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ukeoppgaver5" />
         <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Ukeoppgaver6" />
+        <item itemvalue="Application.Week6" />
+        <item itemvalue="Application.ukeoppgaver5" />
         <item itemvalue="Application.Ukeoppgaver4" />
-        <item itemvalue="Application.Week4" />
-        <item itemvalue="Application.Week3" />
       </list>
     </recent_temporary>
   </component>
@@ -421,6 +482,9 @@
       <workItem from="1537097783623" duration="11630000" />
       <workItem from="1537306086144" duration="148000" />
       <workItem from="1537345261523" duration="27115000" />
+      <workItem from="1537776873639" duration="40609000" />
+      <workItem from="1537944717403" duration="4515000" />
+      <workItem from="1537951177668" duration="1697000" />
     </task>
     <task id="LOCAL-00001" summary="la til metoder fra kap 1.4.1">
       <created>1537261058207</created>
@@ -464,7 +528,28 @@
       <option name="project" value="LOCAL" />
       <updated>1537389319257</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ferdig med oppg 1.4.7 jobber med 1.4.8">
+      <created>1537783460311</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537783460311</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Plages med oppgave 1.4.9">
+      <created>1537823112639</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537823112639</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Jobber med Tabelliste oppgavene">
+      <created>1537947635214</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1537947635215</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -488,12 +573,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130715000" />
+    <option name="totallyTimeSpent" value="177536000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="1253" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07462686" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14668901" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,15 +588,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49781114" weight="0.16594361" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4901316" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49781114" weight="0.29144096" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48970747" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50218886" side_tool="true" weight="0.4049159" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3245509" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3233533" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -518,8 +604,8 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32961375" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
@@ -564,7 +650,10 @@
     <MESSAGE value="1.4.5.d" />
     <MESSAGE value="Oppgave 1.4.6" />
     <MESSAGE value="Oppgave 1.4.6 er ferdig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oppgave 1.4.6 er ferdig" />
+    <MESSAGE value="Ferdig med oppg 1.4.7 jobber med 1.4.8" />
+    <MESSAGE value="Plages med oppgave 1.4.9" />
+    <MESSAGE value="Jobber med Tabelliste oppgavene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jobber med Tabelliste oppgavene" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -577,9 +666,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java</url>
-          <line>371</line>
+          <line>370</line>
           <properties />
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver4.java</url>
@@ -644,9 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,51 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Heltall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,6 +769,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Heltall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Studium.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -723,10 +783,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="250" column="6" lean-forward="true" selection-start-line="250" selection-start-column="6" selection-end-line="250" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AlgdatLive/Week6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Komparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="495">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding>
             <element signature="e#259#260#0" expanded="true" />
             <element signature="e#306#307#0" expanded="true" />
@@ -736,19 +833,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java">
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="633">
+          <caret line="551" column="9" selection-start-line="551" selection-start-column="9" selection-end-line="551" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java">
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="439" column="9" lean-forward="true" selection-start-line="439" selection-start-column="9" selection-end-line="439" selection-end-column="9" />
+        <state relative-caret-position="652">
+          <caret line="569" column="6" selection-start-line="569" selection-start-column="6" selection-end-line="569" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Beholder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Liste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6840">
+          <caret line="528" column="30" selection-start-line="528" selection-start-column="30" selection-end-line="528" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="88" column="57" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/TabellListe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#4464#4465#0" expanded="true" />
+            <element signature="e#4531#4532#0" expanded="true" />
+            <element signature="e#4823#4824#0" expanded="true" />
+            <element signature="e#4871#4872#0" expanded="true" />
           </folding>
         </state>
       </provider>

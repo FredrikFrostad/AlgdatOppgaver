@@ -4,11 +4,17 @@ package Kapittel_1;
 import Eksempelklasser.Liste;
 import Eksempelklasser.TabellListe;
 
+import java.util.Iterator;
+
 public class Ukeoppgaver6 {
 
 
 
     public static void main(String[] args) {
+
+
+        System.out.println("\n******************** Oppgave 3.2.2: \n");
+
 
         /**
          * Oppgave 3.2.2
@@ -34,6 +40,10 @@ public class Ukeoppgaver6 {
             //Oppgave 3
             System.out.println(liste.toString());
         }
+
+        System.out.println("\n******************** Oppgave 3.2.3: \n");
+
+
         /**
          * Oppgave 3.2.3:
          *
@@ -65,10 +75,16 @@ public class Ukeoppgaver6 {
             System.out.println(liste.toString());
         }
 
+        System.out.println("\n******************** Oppgave 3.2.4: \n");
+
         /**
          * Oppgave 3.2.4:
          *
+         * Har lagt inn metoder i Tabelliste og TabellisteIterator
+         * Koden under tester alle metodene.
          *
+         * Husk på å bruke funksjonelle interface som argumenter for å tillate
+         * bruk av lambdakonstruksjoner
          */
 
         {
@@ -92,9 +108,32 @@ public class Ukeoppgaver6 {
 
             liste.forEach(x -> System.out.print(x + " "));
         }
+
+        /**
+         * Oppgave 3.2.5:
+         * Flere iteratorer samtidig
+         *
+         *
+         */
+
+        System.out.println("\n\n******************** Oppgave 3.2.5: \n");
+
+        {
+            String[] s = {"Per","Kari","Ole"};
+
+            Liste<String> liste = new TabellListe<>();
+
+            for (String navn : s) liste.leggInn(navn);
+
+            System.out.println(liste);
+
+            Iterator<String> i = liste.iterator();     // oppretter en iterator i
+            Iterator<String> j = liste.iterator();     // oppretter en iterator j
+
+            System.out.println(i.next());              // den første i listen
+            // i.remove();                                // fjerner den første
+            liste.fjern("Per");
+            System.out.println(i.next());              // den første i listen
+        }
     }
-
-
-
-
 }

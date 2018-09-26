@@ -4,13 +4,14 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Objects;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class TabellListe<T> implements Liste<T> {
 
     private T[] a;
     private int antall;
-    private boolean fjernOK = false;
+    private int endringer;
 
     @SuppressWarnings("unchecked")          // pga. konverteringen: Object[] -> T[]
     public TabellListe(int størrelse)       // konstruktør
@@ -135,10 +136,33 @@ public class TabellListe<T> implements Liste<T> {
 
         Objects.requireNonNull(p,"argument kan ikke være null!");
 
+        int j = 0, match = 0;
+
         for (int i = 0; i < antall; i++) {
-            if (p.test(a[i+1])) {}
+            if (!p.test(a[i])) {
+                a[j++] = a[i];
+            }else{
+                match++;
+            }
         }
-        return false;
+
+        for (int i = antall - match; i < antall; i++) {
+            a[i] = null;
+        }
+
+        antall += -match;
+
+        return match > 0;
+    }
+
+    @Override
+    public void forEach(Consumer<? super T> action) {
+
+        Objects.requireNonNull(action, "argument kan ikke være null!");
+
+        for (int i = 0; i < antall; i++) {
+            action.accept(a[i]);
+        }
     }
 
     @Override
@@ -189,6 +213,8 @@ public class TabellListe<T> implements Liste<T> {
     private class TabellListeIterator implements Iterator<T>
     {
         private int denne = 0;       // instansvariabel
+        private boolean fjernOK = false;
+        private int iteratorendringer = endringer;
 
         public boolean hasNext()     // sjekker om det er flere igjen
         {
@@ -216,6 +242,13 @@ public class TabellListe<T> implements Liste<T> {
 
             System.arraycopy(a,denne + 1, a, denne, antall- denne);
             a[antall] = null;
+        }
+
+        public void forEachRemaining(Consumer<? super T> action) {
+
+            while (denne < antall) {
+                action.accept(a[denne++]);
+            }
         }
     }
 }
