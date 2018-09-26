@@ -1,12 +1,11 @@
 package Kapittel_1;
 
 
-import Eksempelklasser.Liste;
-import Eksempelklasser.TabellListe;
+import Eksempelklasser.Lenketliste.EnkeltLenketListe;
+import Eksempelklasser.TabelListe.Liste;
+import Eksempelklasser.TabelListe.TabellListe;
 
 import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Random;
 
 public class Program {
 
@@ -47,8 +46,12 @@ public class Program {
         System.out.println("Listeinnhold: " + liste);
 
 
-            //Tabell.innsettingssortering(b);
-            //Tabell.skriv(b);
+        EnkeltLenketListe linklist  = new EnkeltLenketListe();
+        for (String element : str) {linklist.leggInn(element);}
+
+        System.out.println(linklist.toString());
+
+
     }
 }
 

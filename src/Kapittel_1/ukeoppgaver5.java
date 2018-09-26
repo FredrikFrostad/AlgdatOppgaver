@@ -1,11 +1,10 @@
 package Kapittel_1;
 
 import Eksempelklasser.*;
+import Eksempelklasser.TabelListe.Komparator;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Optional;
-import java.util.stream.Stream;
 
 public class ukeoppgaver5 {
 

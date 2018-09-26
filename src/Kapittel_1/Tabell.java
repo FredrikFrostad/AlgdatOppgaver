@@ -1,6 +1,6 @@
 package Kapittel_1;
 
-import Eksempelklasser.Komparator;
+import Eksempelklasser.TabelListe.Komparator;
 
 import java.util.Arrays;
 import java.util.Comparator;

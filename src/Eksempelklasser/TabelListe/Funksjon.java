@@ -1,4 +1,4 @@
-package Eksempelklasser;
+package Eksempelklasser.TabelListe;
 
 @FunctionalInterface
 public interface Funksjon<T,R>    // T for argumenttype, R for returtype

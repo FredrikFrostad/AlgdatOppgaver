@@ -1,9 +1,6 @@
-package Eksempelklasser;
+package Eksempelklasser.TabelListe;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
@@ -50,6 +47,7 @@ public class TabellListe<T> implements Liste<T> {
         }
 
         a[antall++] = verdi;
+        endringer++;
 
         return true;
     }
@@ -70,6 +68,7 @@ public class TabellListe<T> implements Liste<T> {
 
         a[indeks] = verdi;
         antall++;
+        endringer++;
     }
 
     @Override
@@ -103,6 +102,8 @@ public class TabellListe<T> implements Liste<T> {
 
         T gammelVerdi = a[indeks];
         a[indeks] = verdi;
+        endringer++;
+
         return gammelVerdi;
     }
 
@@ -114,6 +115,9 @@ public class TabellListe<T> implements Liste<T> {
                 a[i] = null;
                 antall--;
                 System.arraycopy(a, i + 1, a, i, antall-i);
+
+                endringer++;
+
                 return true;
             }
         }
@@ -128,6 +132,8 @@ public class TabellListe<T> implements Liste<T> {
 
         antall--;
         System.arraycopy(a, indeks + 1, a, indeks, antall - indeks);
+        endringer++;
+
         return verdi;
     }
 
@@ -152,7 +158,10 @@ public class TabellListe<T> implements Liste<T> {
 
         antall += -match;
 
-        return match > 0;
+        boolean endret = match > 0;
+        if (endret) endringer++;
+
+        return endret;
     }
 
     @Override
@@ -222,8 +231,14 @@ public class TabellListe<T> implements Liste<T> {
         }
 
         public T next() {
+
+            if (iteratorendringer != endringer) {
+                throw new ConcurrentModificationException
+                        ("Listen er endret!");
+            }
             if (!hasNext())
                 throw new NoSuchElementException("Tomt eller ingen verdier igjen!");
+
             T denneVerdi = a[denne];
             denne++;
             fjernOK = true;
@@ -232,16 +247,23 @@ public class TabellListe<T> implements Liste<T> {
         }
 
         public void remove() {
+
+            if (iteratorendringer != endringer) {
+                throw new ConcurrentModificationException
+                        ("Listen er endret!");
+            }
             if (!fjernOK) {
                 throw new IllegalStateException("Ulovlig tillstand");
             }
             fjernOK = false;
-
             antall--;
             denne--;
 
             System.arraycopy(a,denne + 1, a, denne, antall- denne);
             a[antall] = null;
+
+            endringer++;
+            iteratorendringer++;
         }
 
         public void forEachRemaining(Consumer<? super T> action) {

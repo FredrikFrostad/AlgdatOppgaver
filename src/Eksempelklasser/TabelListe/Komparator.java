@@ -1,4 +1,4 @@
-package Eksempelklasser;
+package Eksempelklasser.TabelListe;
 
 @FunctionalInterface
 public interface Komparator<T>      // et funksjonsgrensesnitt

@@ -1,4 +1,4 @@
-package Eksempelklasser;
+package Eksempelklasser.TabelListe;
 
 import java.util.Iterator;
 
