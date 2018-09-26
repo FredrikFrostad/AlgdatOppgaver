@@ -2,6 +2,7 @@ package Kapittel_1;
 
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Random;
 
 public class Program {
@@ -25,7 +26,11 @@ public class Program {
         }
 
         //Arrays.stream(d).forEach(e -> System.out.println());
-        Arrays.stream(b).forEach(e -> System.out.println(e));
+        Arrays.stream(b)
+                .filter(e -> e > 7)
+                .map(e -> e*2)
+                .forEach(e -> System.out.println(e));
+
 
 
 

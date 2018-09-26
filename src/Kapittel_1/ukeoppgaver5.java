@@ -25,7 +25,7 @@ public class ukeoppgaver5 {
         }
         /**
          * Oppgave 1.4.1_4:
-         *For at vi skal kunne bruke compareTo, må vi wrappe den primitive integerer
+         *For at vi skal kunne bruke compareTo, må vi wrappe den primitive integeren
          * i et Integer objekt. Ved kjøring av metoden ser vi at a.compareTo(b) gir
          * -1 dersom a < b, 0 dersom a = b, 1 dersom a > b
          */

@@ -362,8 +362,6 @@ public class Tabell {
     }
 
 
-
-
     //Metode som sorterer verdiene i et array i stigende rekkefølge
     public static void sortering(int[] a) {
 
@@ -568,5 +566,7 @@ public class Tabell {
         a[i] = a[j];
         a[j] = temp;
     }
+
+    //public static <T> int binærsøk(T[] a, int fra, int til,)
 
 }
