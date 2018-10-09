@@ -45,11 +45,7 @@ public class Program {
 
         System.out.println("Listeinnhold: " + liste);
 
-
-        EnkeltLenketListe linklist  = new EnkeltLenketListe();
-        for (String element : str) {linklist.leggInn(element);}
-
-        System.out.println(linklist.toString());
+        System.out.println(liste.inneholder("Berit"));
 
 
     }

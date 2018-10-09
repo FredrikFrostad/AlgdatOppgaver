@@ -4,6 +4,8 @@ package Kapittel_1;
 import Eksempelklasser.TabelListe.Liste;
 import Eksempelklasser.TabelListe.TabellListe;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 
 public class Ukeoppgaver6 {
@@ -149,15 +151,30 @@ public class Ukeoppgaver6 {
             i.remove();                                // fjerner den første
             System.out.println(i.next());              // den første i listen
             //System.out.println(j.next());    // hvis vi bruker den andre iteratoren kastes det en exception!!
-
-
-
+            ArrayList<Integer> intlist = new ArrayList<Integer>();
+            intlist.set(1,2);
         }
 
         /**
          * Oppgave 3.3.2:
          */
 
-        System.out.println("\n:\n");
+        System.out.println("\nOppgave 3.3.2:\n");
+
+        /**
+         * Alle deloppgaver er utført.
+         */
+        {
+
+        }
+
+        System.out.println("\nOppgave 3.3.3:\n");
+
+        /**
+         *
+         */
+        {
+
+        }
     }
 }
