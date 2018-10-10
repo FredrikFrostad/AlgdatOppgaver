@@ -1,4 +1,4 @@
-package Eksempelklasser;
+package Eksempelklasser.Objects_101;
 
 public class Student extends Person   // Student blir subklasse til Person
 {

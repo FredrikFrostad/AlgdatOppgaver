@@ -1,4 +1,4 @@
-package Eksempelklasser;
+package Eksempelklasser.Objects_101;
 
 public enum Studium  // legges under package eksempelklasser
 {

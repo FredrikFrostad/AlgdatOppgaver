@@ -1,9 +1,7 @@
-package Kapittel_1;
-
-
 import Eksempelklasser.Lenketliste.EnkeltLenketListe;
 import Eksempelklasser.TabelListe.Liste;
 import Eksempelklasser.TabelListe.TabellListe;
+import Kapittel_1.Tabell;
 
 import java.util.Arrays;
 

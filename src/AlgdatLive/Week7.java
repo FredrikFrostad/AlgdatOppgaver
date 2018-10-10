@@ -12,21 +12,32 @@ public class Week7 {
     En stack kan sees på som en stabel med tallerkener, der du kun har tilgang til den øverste tallerkenen.
     Dvs at man kan jobbe (poppe) seg gjennom stabelen fra toppen.
 
-    push    -> legger på en "tallerken" i stack
-    pop     -> fjerner en "tallerken" fra stack
-            -> Call stack
-            -> Last in, first out queue (LIFO - queue)
+    push                -> legger på en "tallerken" i stack
+    pop                 -> fjerner en "tallerken" fra stack
+                        -> Call stack
+                        -> Last in, first out queue (LIFO - queue)
+
+   QUEUE                -> First in, first out queue (FIFO - queue)
+
+   DEEQUE               -> Kan være både LIFO og FIFO
+
+   PRIORITY QUEUUE      -> Elementer går inn / ut basert på hvilken prioritet elementet har
+
+        [3,9,1,2,4,8]
+
+        while (queue.size() > 0) {
+
+            int verdi = queue.finnMinste();
+            print(verdi);
+
+        }
 
      */
 
 
-    /*
-    Double ended queue - DEQUE
-
-
-
+    /**
+     * DEQUE med alle metoder importert
      */
-
     {
         Deque<Integer> deq = new Deque<Integer>() {
             @Override

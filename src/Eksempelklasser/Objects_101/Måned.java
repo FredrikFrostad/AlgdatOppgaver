@@ -1,4 +1,4 @@
-package Eksempelklasser;
+package Eksempelklasser.Objects_101;
 
 import java.util.Arrays;
 
