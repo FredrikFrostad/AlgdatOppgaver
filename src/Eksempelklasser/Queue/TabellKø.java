@@ -1,5 +1,8 @@
 package Eksempelklasser.Queue;
 
+import Eksempelklasser.Tabellstack.Stakk;
+import Eksempelklasser.Tabellstack.TabellStack;
+
 import java.util.NoSuchElementException;
 
 public class TabellKø<T> implements Kø<T>
@@ -77,7 +80,7 @@ public class TabellKø<T> implements Kø<T>
 
     @Override
     public void nullstill() {
-        for (int i = fra; i < til; i++) {
+        for (int i = 0; i < a.length; i++) {
             a[i] = null;
         }
         fra = til = 0;
@@ -88,19 +91,52 @@ public class TabellKø<T> implements Kø<T>
 
         if (fra == til) return "[]";
 
-        StringBuilder sb = new StringBuilder();
-        sb.append("[").append(a[fra]);
+        int i = fra;
+        if (i == a.length) i = 0;
 
-        int ant = antall() + fra;
-        for (int i = fra + 1; i < ant - 1; i++) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[").append(a[i++]);
+
+        while (i != til) {
+            if (i == a.length) i = 0;
             sb.append(", ").append(a[i]);
+            i++;
+            if (i == a.length) i = 0;
         }
         sb.append("]");
 
         return sb.toString();
     }
 
-    public T[] getKø() {
-        return a;
+    public int indeksTil(T verdi) {
+        System.out.println("lengde: " + a.length);
+        int indeks = fra;
+        if (indeks == a.length) indeks = 0;
+
+        while (indeks != til) {
+            if (verdi.equals(a[indeks])) {
+                //System.out.println("fra: " + fra);
+                //System.out.println("indeks: " + indeks);
+                return fra <= indeks ? indeks - fra : a.length + indeks - fra;
+            }
+            indeks++;
+            if (indeks == a.length) indeks = 0;
+        }
+
+        return -1; //Verdi ikke i kø
+    }
+
+    public static <T> void snu(Stakk<T> A)  {
+        TabellKø<T> B = new TabellKø<>();
+
+        while (!A.tom()) B.leggInn(A.taUt());
+        while (!B.tom()) A.leggInn(B.taUt());
+    }
+
+    public static <T> void snu(Kø<T> A) {
+        TabellStack<T> B = new TabellStack<>();
+
+        while (!A.tom()) B.leggInn(A.taUt());
+        while (!B.tom()) A.leggInn(B.taUt());
     }
 }

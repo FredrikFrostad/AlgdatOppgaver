@@ -1,5 +1,6 @@
 package Kapittel_4;
 
+import Eksempelklasser.Queue.TabellKø;
 import Eksempelklasser.Tabellstack.TabellStack;
 
 public class Ukeoppgaver7 {
@@ -198,7 +199,7 @@ public class Ukeoppgaver7 {
         System.out.println("\n Oppgave 7: \n");
 
 
-        System.out.println("\n ******* Oppgave 4.1.2 ******\n");
+        System.out.println("\n ******* Oppgave 4.2.2 ******\n");
 
         /**
          * 4)       Flytt grensesnittet Kø over i ditt prosjekt (f.eks. under hjelpeklasser).
@@ -222,5 +223,84 @@ public class Ukeoppgaver7 {
          * 10)      Lag metoden public static <T> void snu(Kø<T> A). Den skal snu rekkefølgen av verdiene i køen A.
          *          Bruk en stakk som hjelpemiddel i kodingen.
          */
+
+        System.out.println("\n************* Oppgave 6 og 7: *************\n");
+
+        {
+            TabellKø<Integer> kø = new TabellKø<>();
+
+            System.out.println("tom: " + kø.tom());
+            System.out.println("antall: " + kø.antall());
+            System.out.println(kø.toString());
+
+            for (int i = 0; i <= 10; i++) {
+                kø.leggInn(i);
+            }
+
+            System.out.println("toString: " + kø.toString());
+            System.out.println("antall: "+ kø.antall());
+            System.out.println("tom: " + kø.tom());
+            System.out.println("kikk: " + kø.kikk());
+        }
+
+        System.out.println("\n************* Oppgave 8: *************\n");
+
+        {
+            TabellKø<Integer> kø = new TabellKø<>();
+
+            for (int i = 0; i <= 10; i++) {
+                kø.leggInn(i);
+            }
+
+            System.out.println("toString: " + kø.toString());
+
+            kø.taUt();
+            kø.taUt();
+            kø.taUt();
+            kø.taUt();
+            kø.taUt();
+            kø.taUt();
+            kø.taUt();
+            kø.taUt();
+            kø.taUt();
+
+            for (int i = 12; i <= 20; i++) {
+                kø.leggInn(i);
+            }
+            kø.leggInn(5);
+
+            System.out.println("toString: " + kø.toString());
+
+            System.out.println("indeks til verdi 5 er: " + kø.indeksTil(5));
+
+        }
+
+
+        System.out.println("\n************* Oppgave 9: *************\n");
+
+        {
+            TabellStack<Integer> stakk = new TabellStack<>();
+            for (int i = 0; i < 10; i++) {
+                stakk.leggInn(i);
+            }
+
+            System.out.println(stakk.toString());
+            TabellKø.snu(stakk);
+            System.out.println(stakk.toString());
+        }
+
+        System.out.println("\n************* Oppgave 10: *************\n");
+
+        {
+            TabellKø<Integer> kø = new TabellKø<>();
+            for (int i = 0; i < 10; i++) {
+                kø.leggInn(i);
+            }
+
+            System.out.println(kø.toString());
+            TabellKø.snu(kø);
+            System.out.println(kø.toString());
+        }
+
     }
 }
