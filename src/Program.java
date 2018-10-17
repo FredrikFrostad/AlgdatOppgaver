@@ -1,9 +1,13 @@
 import Eksempelklasser.Lenketliste.EnkeltLenketListe;
+import Eksempelklasser.Queue.TabellKø;
 import Eksempelklasser.TabelListe.Liste;
 import Eksempelklasser.TabelListe.TabellListe;
+import Eksempelklasser.Tabellstack.TabellStack;
 import Kapittel_1.Tabell;
 
 import java.util.Arrays;
+
+import static javafx.scene.input.KeyCode.T;
 
 public class Program {
 
@@ -46,6 +50,59 @@ public class Program {
         System.out.println(liste.inneholder("Berit"));
 
 
+        TabellStack stack = new TabellStack();
+
+        stack.leggInn("1");
+        stack.leggInn("2");
+        stack.leggInn("3");
+
+        System.out.println(stack.toString());
+
+        System.out.println("test terniary operator: ");
+        System.out.println(test(10));
+
+        System.out.println("Tabellkø testing: ");
+
+        TabellKø<Integer> kø = new TabellKø<>();
+
+        for (int i = 0; i <= 10; i++) {
+            kø.leggInn(i);
+        }
+
+        System.out.println(kø.taUt());
+        System.out.println(kø.taUt());
+        System.out.println(kø.taUt());
+        System.out.println(kø.taUt());
+        System.out.println(kø.taUt());
+
+        System.out.println(kø.toString());
+
+        kø.leggInn(11);
+        kø.leggInn(12);
+        kø.leggInn(13);
+        kø.leggInn(14);
+        kø.leggInn(15);
+
+        System.out.println(kø.taUt());
+        System.out.println(kø.taUt());
+        System.out.println(kø.taUt());
+
+
+
+        System.out.println(kø.toString());
+
+
+
+    }
+    public static int test(int b) {
+        int a = 5;
+
+        return a < b ? returner(a) : b;
+
+    }
+
+    public static int returner(int a) {
+        return 123456 + a;
     }
 }
 
