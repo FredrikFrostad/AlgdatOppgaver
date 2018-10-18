@@ -91,6 +91,14 @@ public class Program {
 
         System.out.println(kø.toString());
 
+        System.out.println("\ntesting av bitoperatorer: \n");
+
+        //System.out.println("printer bitrepresentasjon av int: " + Integer.highestOneBit(45));
+        System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(39));
+        //int bit = Integer.highestOneBit(45) >> 1;
+        //String bitstr = Integer.toBinaryString(bit);
+        //System.out.println("bitforskyver deretter med 1: " + bit);
+        //System.out.println("bitforskyver deretter med 1: " + bitstr);
 
 
     }

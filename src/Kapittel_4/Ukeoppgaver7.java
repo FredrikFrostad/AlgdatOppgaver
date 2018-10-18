@@ -1,7 +1,13 @@
 package Kapittel_4;
 
+import Eksempelklasser.Queue.EnkeltLenketListe;
+import Eksempelklasser.Queue.Kø;
 import Eksempelklasser.Queue.TabellKø;
+import Eksempelklasser.Tabellstack.Stakk;
 import Eksempelklasser.Tabellstack.TabellStack;
+import Kapittel_1.Tabell;
+
+import java.util.Comparator;
 
 public class Ukeoppgaver7 {
 
@@ -302,5 +308,42 @@ public class Ukeoppgaver7 {
             System.out.println(kø.toString());
         }
 
+
+        System.out.println("\n ******* Oppgave 4.2.2 ******\n");
+
+        /**
+         *  1) 	La klassen EnkeltLenketListe implementere Kø. Se Programkode 4.2.4 a).
+         *  Legg så inn de to metodene kikk() og taUt(). Sjekk at Programkode 4.2.4 c) virker
+         */
+
+        System.out.println("\n************* Oppgave 1: *************\n");
+
+        {
+            Kø<Integer> kø = new EnkeltLenketListe<>();
+
+            for (int i = 1; i <= 10; i++) kø.leggInn(i);
+
+            while (!kø.tom())
+            {
+                System.out.print(kø.taUt() + " ");
+            }
+        }
+
+        System.out.println("\n************* Oppgave 4: *************\n");
+
+        {
+            Integer[] a = Tabell.randPermInteger(10);
+
+            Kø<Integer> kø = new EnkeltLenketListe<>();
+            for (Integer i : a) kø.leggInn(i);
+
+            System.out.println(kø);    // usortert
+
+            Stakk<Integer> stakk = new TabellStack<>();
+
+            EnkeltLenketListe.sorter(kø, stakk, Comparator.naturalOrder());
+
+            System.out.println(kø);    // sortert
+        }
     }
 }
