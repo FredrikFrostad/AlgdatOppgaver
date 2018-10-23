@@ -93,9 +93,43 @@ public class Program {
 
         System.out.println("\ntesting av bitoperatorer: \n");
 
-        //System.out.println("printer bitrepresentasjon av int: " + Integer.highestOneBit(45));
-        System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(39));
-        //int bit = Integer.highestOneBit(45) >> 1;
+        //System.out.println("printer ONEbitrepresentasjon av int: " + Integer.highestOneBit(35));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(32));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(8192));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(4096));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(2048));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(1024));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(512));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(256));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(128));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(32));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(16));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(8));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(4));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(2));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(1));
+        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(0));
+        int pos = 10;
+        int filter = Integer.highestOneBit(pos >> 1);
+        System.out.println(Integer.toBinaryString(pos & filter
+        ));
+        filter >>= 1;
+
+        //System.out.println(Integer.toBinaryString(pos));
+        //System.out.println(Integer.toBinaryString(filter & 13));
+        //System.out.println(Integer.toBinaryString(pos & filter));
+        //filter >>= 1;
+        //System.out.println(Integer.toBinaryString(pos & filter));
+        //filter >>= 1;
+        //System.out.println(Integer.toBinaryString(pos & filter));
+        //filter >>= 1;
+        //System.out.println(Integer.toBinaryString(pos & filter));
+        filter >>= 1;
+        //System.out.println(Integer.toBinaryString(filter >>=1 & 13));
+        //System.out.println(Integer.toBinaryString(filter >>=1 & 13));
+       // System.out.println(filternonbit);
+       // System.out.println(filternonbit >>= 1);
+       // System.out.println(filternonbit);
         //String bitstr = Integer.toBinaryString(bit);
         //System.out.println("bitforskyver deretter med 1: " + bit);
         //System.out.println("bitforskyver deretter med 1: " + bitstr);
