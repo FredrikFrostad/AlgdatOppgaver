@@ -42,15 +42,20 @@ public class Week9Heap {
             int child = i;
             int parent = parentIndeksArray;
 
+            System.out.println("Legger til node: " + data[child]);
             while (parent >= 0 && data[child] < data[parent]) {
+
+                //Bytt child og parent
+                char temp = data[child];
+                data[child] = data[parent];
+                data[parent] = temp;
+
+                //Oppdaterer child og parent pekere
                 child = parent;
                 parent = (parent + 1) / 2 - 1;
             }
 
-
-
-            System.out.println("Legger til node: ");
-            printArrayBinTree(data, i +1);
+            //printArrayBinTree(data, i +1);
 
         }
     }

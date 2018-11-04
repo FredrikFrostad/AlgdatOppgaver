@@ -1,3 +1,4 @@
+import Eksempelklasser.LenketHashTabell.LenketHashTabell;
 import Eksempelklasser.Lenketliste.EnkeltLenketListe;
 import Eksempelklasser.Queue.TabellKø;
 import Eksempelklasser.TabelListe.Liste;
@@ -12,6 +13,23 @@ import static javafx.scene.input.KeyCode.T;
 public class Program {
 
     public static void main(String[] args) {
+
+        String[] navn = {"Olga","Basir","Ali","Per","Elin","Siri",
+                "Ole","Mette","Anne","Åse","Leif","Mona","Lise"};
+
+        LenketHashTabell<String> hashtabell = new LenketHashTabell<>();
+
+        for (String n : navn) hashtabell.leggInn(n);
+
+        System.out.println(hashtabell);
+        // [Elin, Basir, Leif, Ole, Olga, Per, Mette, Mona, Anne, Ali, Lise, Åse, Siri]
+
+    }
+}
+
+
+
+/*
 
         String[] s = {"Sohil","Per","Thanh","Fatima","Kari","Jasmin"};
         int k = Tabell.maks(s);        // hvilken maks-metode?
@@ -50,103 +68,4 @@ public class Program {
         System.out.println(liste.inneholder("Berit"));
 
 
-        TabellStack stack = new TabellStack();
-
-        stack.leggInn("1");
-        stack.leggInn("2");
-        stack.leggInn("3");
-
-        System.out.println(stack.toString());
-
-        System.out.println("test terniary operator: ");
-        System.out.println(test(10));
-
-        System.out.println("Tabellkø testing: ");
-
-        TabellKø<Integer> kø = new TabellKø<>();
-
-        for (int i = 0; i <= 10; i++) {
-            kø.leggInn(i);
-        }
-
-        System.out.println(kø.taUt());
-        System.out.println(kø.taUt());
-        System.out.println(kø.taUt());
-        System.out.println(kø.taUt());
-        System.out.println(kø.taUt());
-
-        System.out.println(kø.toString());
-
-        kø.leggInn(11);
-        kø.leggInn(12);
-        kø.leggInn(13);
-        kø.leggInn(14);
-        kø.leggInn(15);
-
-        System.out.println(kø.taUt());
-        System.out.println(kø.taUt());
-        System.out.println(kø.taUt());
-
-
-
-        System.out.println(kø.toString());
-
-        System.out.println("\ntesting av bitoperatorer: \n");
-
-        //System.out.println("printer ONEbitrepresentasjon av int: " + Integer.highestOneBit(35));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(32));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(8192));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(4096));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(2048));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(1024));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(512));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(256));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(128));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(32));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(16));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(8));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(4));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(2));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(1));
-        //System.out.println("printer binærrepresentasjon av int: " + Integer.toBinaryString(0));
-        int pos = 10;
-        int filter = Integer.highestOneBit(pos >> 1);
-        System.out.println(Integer.toBinaryString(pos & filter
-        ));
-        filter >>= 1;
-
-        //System.out.println(Integer.toBinaryString(pos));
-        //System.out.println(Integer.toBinaryString(filter & 13));
-        //System.out.println(Integer.toBinaryString(pos & filter));
-        //filter >>= 1;
-        //System.out.println(Integer.toBinaryString(pos & filter));
-        //filter >>= 1;
-        //System.out.println(Integer.toBinaryString(pos & filter));
-        //filter >>= 1;
-        //System.out.println(Integer.toBinaryString(pos & filter));
-        filter >>= 1;
-        //System.out.println(Integer.toBinaryString(filter >>=1 & 13));
-        //System.out.println(Integer.toBinaryString(filter >>=1 & 13));
-       // System.out.println(filternonbit);
-       // System.out.println(filternonbit >>= 1);
-       // System.out.println(filternonbit);
-        //String bitstr = Integer.toBinaryString(bit);
-        //System.out.println("bitforskyver deretter med 1: " + bit);
-        //System.out.println("bitforskyver deretter med 1: " + bitstr);
-
-
-    }
-    public static int test(int b) {
-        int a = 5;
-
-        return a < b ? returner(a) : b;
-
-    }
-
-    public static int returner(int a) {
-        return 123456 + a;
-    }
-}
-
-
-
+ */
