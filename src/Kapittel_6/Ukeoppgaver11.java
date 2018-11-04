@@ -4,6 +4,7 @@ import Eksempelklasser.LenketHashTabell.LenketHashTabell;
 import Kapittel_1.Tabell;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 import static java.util.Objects.hash;
 
@@ -256,6 +257,68 @@ public class Ukeoppgaver11 {
 
             System.out.println("\nSjekker om Roger er i tabellen, skal gi false: ");
             System.out.println(hashTabell.inneholder("Roger"));
+        }
+
+        {
+            System.out.println("\n Oppgave 5: \n");
+
+            String[] navn = {"Olga","Basir","Ali","Per","Elin","Siri",
+                    "Ole","Mette","Anne","Åse","Leif","Mona","Lise"};
+
+
+            LenketHashTabell<String> hashTabell = new LenketHashTabell<>(13);
+
+            for (String e : navn) {
+                hashTabell.leggInn(e);
+            }
+
+            System.out.println("Før fjerning\n" + hashTabell.toString());
+            hashTabell.fjern("Basir");
+            System.out.println("\nEtter fjerning\n" + hashTabell.toString());
+
+        }
+
+        {
+            System.out.println("\n Oppgave 6: \n");
+
+            String[] navn = {"Olga","Basir","Ali","Per","Elin","Siri",
+                    "Ole","Mette","Anne","Åse","Leif","Mona","Lise"};
+
+
+            LenketHashTabell<String> hashTabell = new LenketHashTabell<>(13);
+
+            for (String e : navn) {
+                hashTabell.leggInn(e);
+            }
+
+            System.out.println("Før fjerning\n" + hashTabell.toString());
+            hashTabell.nullstill();
+            System.out.println("\nEtter fjerning\n" + hashTabell.toString());
+        }
+
+        {
+            System.out.println("\n Oppgave 7: \n");
+
+            String[] navn = {"Olga","Basir","Ali","Per","Elin","Siri",
+                    "Ole","Mette","Anne","Åse","Leif","Mona","Lise"};
+
+
+            LenketHashTabell<String> hashTabell = new LenketHashTabell<>(13);
+
+            for (String e : navn) {
+                hashTabell.leggInn(e);
+            }
+
+            Iterator<String> iter = hashTabell.iterator();
+
+            System.out.println("Før fjerning\n" + hashTabell.toString());
+
+            while (iter.hasNext()) {
+                iter.next();
+                iter.remove();
+            }
+
+            System.out.println("\nEtter fjerning\n" + hashTabell.toString());
         }
     }
 
