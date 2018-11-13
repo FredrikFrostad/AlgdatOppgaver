@@ -2,6 +2,7 @@ package Kapittel_1;
 
 import Eksempelklasser.Objects_101.*;
 import Eksempelklasser.TabelListe.Komparator;
+import Eksempelklasser.Tabell.Tabell;
 
 import java.util.Arrays;
 import java.util.Comparator;

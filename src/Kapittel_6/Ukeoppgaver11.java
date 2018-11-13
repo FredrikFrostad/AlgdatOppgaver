@@ -1,12 +1,10 @@
 package Kapittel_6;
 
 import Eksempelklasser.LenketHashTabell.LenketHashTabell;
-import Kapittel_1.Tabell;
+import Eksempelklasser.Tabell.Tabell;
 
 import java.util.Arrays;
 import java.util.Iterator;
-
-import static java.util.Objects.hash;
 
 public class Ukeoppgaver11 {
 
@@ -320,6 +318,12 @@ public class Ukeoppgaver11 {
 
             System.out.println("\nEtter fjerning\n" + hashTabell.toString());
         }
+
+        /**
+         * Oppgaver til kapittel 9 - balanserte trær.
+         */
+
+        
     }
 
 

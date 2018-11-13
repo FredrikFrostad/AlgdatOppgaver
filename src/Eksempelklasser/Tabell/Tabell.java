@@ -1,4 +1,4 @@
-package Kapittel_1;
+package Eksempelklasser.Tabell;
 
 import Eksempelklasser.TabelListe.Komparator;
 

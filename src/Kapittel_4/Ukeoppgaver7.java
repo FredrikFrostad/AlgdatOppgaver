@@ -5,7 +5,7 @@ import Eksempelklasser.Queue.Kø;
 import Eksempelklasser.Queue.TabellKø;
 import Eksempelklasser.Tabellstack.Stakk;
 import Eksempelklasser.Tabellstack.TabellStack;
-import Kapittel_1.Tabell;
+import Eksempelklasser.Tabell.Tabell;
 
 import java.util.Comparator;
 

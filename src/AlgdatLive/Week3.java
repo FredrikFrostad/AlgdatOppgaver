@@ -1,6 +1,6 @@
 package AlgdatLive;
 
-import Kapittel_1.Tabell;
+import Eksempelklasser.Tabell.Tabell;
 
 public class Week3 {
 

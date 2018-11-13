@@ -1,14 +1,4 @@
 import Eksempelklasser.LenketHashTabell.LenketHashTabell;
-import Eksempelklasser.Lenketliste.EnkeltLenketListe;
-import Eksempelklasser.Queue.TabellKø;
-import Eksempelklasser.TabelListe.Liste;
-import Eksempelklasser.TabelListe.TabellListe;
-import Eksempelklasser.Tabellstack.TabellStack;
-import Kapittel_1.Tabell;
-
-import java.util.Arrays;
-
-import static javafx.scene.input.KeyCode.T;
 
 public class Program {
 

@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="Jobber med oppgave 6.1.4 - oppgave 5. &#10;Skal implementer metode fjern() for LenketHasTabell">
+    <list default="true" id="a341026f-7ccb-4463-a82b-91861546ffe6" name="Default" comment="Jobber med oppgave 6.1.4 - oppgave 7">
+      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/Heapprioritetskø/HeapPrioritetsKø.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/Heapprioritetskø/PrioritetsKø.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Eksempelklasser/RSBintre/RSBinTre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kapittel_5/Ukeoppgaver10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Eksempelklasser/LenketHashTabell/LenketHashTabell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eksempelklasser/LenketHashTabell/LenketHashTabell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Forelesning1/AlgdatLive/Week3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning1/AlgdatLive/Week3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Forelesning1/AlgdatLive/Week4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning1/AlgdatLive/Week4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Forelesning1/AlgdatLive/Week4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Forelesning1/AlgdatLive/Week4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AlgdatLive/Week3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlgdatLive/Week3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AlgdatLive/Week4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlgdatLive/Week4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kapittel_1/Tabell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eksempelklasser/Tabell/Tabell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kapittel_4/Ukeoppgaver7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_4/Ukeoppgaver7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,40 +43,40 @@
     <session id="1013771628">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="5" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="43615" />
-          <entry key="txt" value="515" />
+          <entry key="java" value="43991" />
+          <entry key="txt" value="517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="43615" />
-          <entry key="PLAIN_TEXT" value="516" />
+          <entry key="JAVA" value="43991" />
+          <entry key="PLAIN_TEXT" value="518" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="83" />
+          <entry key="java" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="94" />
         </counts>
       </usages-collector>
     </session>
@@ -72,15 +84,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/BinaryTree/BinTre.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="316" selection-start-line="316" selection-end-line="316" />
+            <state relative-caret-position="588">
+              <caret line="325" column="8" selection-start-line="325" selection-start-column="8" selection-end-line="325" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,43 +96,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/RSBintre/RSBinTre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1570#1571#0" expanded="true" />
+                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1716#1717#0" expanded="true" />
+                <element signature="e#1744#1745#0" expanded="true" />
+                <element signature="e#1795#1796#0" expanded="true" />
+                <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="e#1864#1865#0" expanded="true" />
+                <element signature="e#1888#1889#0" expanded="true" />
+                <element signature="e#1930#1931#0" expanded="true" />
+                <element signature="e#1958#1959#0" expanded="true" />
+                <element signature="e#2061#2062#0" expanded="true" />
+                <element signature="e#2088#2089#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/TabelListe/Beholder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/LenketHashTabell/LenketHashTabell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="272" column="21" selection-start-line="272" selection-start-column="21" selection-end-line="272" selection-end-column="21" />
+            <state relative-caret-position="3780">
+              <caret line="259" column="45" selection-start-line="259" selection-start-column="45" selection-end-line="259" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#821#864#0" expanded="true" />
                 <element signature="e#4461#4462#0" expanded="true" />
-                <element signature="e#4509#4510#0" expanded="true" />
-                <element signature="e#3122#3165#1" expanded="true" />
-                <element signature="e#6135#6136#0" expanded="true" />
-                <element signature="e#6175#6176#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Iterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-              <folding>
-                <element signature="e#2899#2900#0" expanded="true" />
-                <element signature="e#2964#2965#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Program.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#4508#4509#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,9 +183,12 @@
       <find>legginn</find>
       <find>inneholder</find>
       <find>iterator</find>
+      <find>TabellStakk</find>
+      <find>Tabellstack</find>
     </findStrings>
     <replaceStrings>
       <replace>innsettingssortering</replace>
+      <replace>TabellStack</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +200,7 @@
     <setting file="file://$PROJECT_DIR$/src/Eksempelklasser/Lenketliste/EnkeltLenketListe.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AlgdatLive/Week9.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Eksempelklasser/Tabell/Tabell.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Eksempelklasser/TabelListe/TabellListe.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Kapittel_1/ukeoppgaver5.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Kapittel_3/Ukeoppgaver6.java" root0="SKIP_INSPECTION" />
@@ -196,10 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Kapittel_1/Ukeoppgaver_Kap1.java" />
-        <option value="$PROJECT_DIR$/src/Kap1_1/Delkapittel_2.java" />
-        <option value="$PROJECT_DIR$/src/Kap1_1/Delkapittel1Test.java" />
-        <option value="$PROJECT_DIR$/src/Kap1_2/Delkapittel_2.java" />
         <option value="$PROJECT_DIR$/src/Kap1_2/Tabell.java" />
         <option value="$PROJECT_DIR$/src/Kap1_1/Main.java" />
         <option value="$PROJECT_DIR$/src/Kapittel_1/Main.java" />
@@ -245,8 +255,12 @@
         <option value="$PROJECT_DIR$/src/AlgdatLive/Week9.java" />
         <option value="$PROJECT_DIR$/src/AlgdatLive/Week9Heap.java" />
         <option value="$PROJECT_DIR$/src/Program.java" />
-        <option value="$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java" />
         <option value="$PROJECT_DIR$/src/Eksempelklasser/LenketHashTabell/LenketHashTabell.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Heapprioritetskø/HeapPrioritetsKø.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/Heapprioritetskø/PrioritetsKø.java" />
+        <option value="$PROJECT_DIR$/src/Kapittel_5/Ukeoppgaver10.java" />
+        <option value="$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java" />
+        <option value="$PROJECT_DIR$/src/Eksempelklasser/RSBintre/RSBinTre.java" />
       </list>
     </option>
   </component>
@@ -256,11 +270,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1926" />
-    <option name="y" value="282" />
-    <option name="width" value="1153" />
-    <option name="height" value="1056" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1522" />
+    <option name="height" value="1952" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -282,22 +301,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Default'; set:Default; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="AlgdatOppgaver" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Forelesning1" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="AlgdatOppgaver" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Forelesning1" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,29 +323,62 @@
               <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Kapittel_6" type="462c0819:PsiDirectoryNode" />
+              <item name="Eksempelklasser" type="462c0819:PsiDirectoryNode" />
+              <item name="BinaryTree" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="Forelesning1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Forelesning1" type="616d4139:PackageViewModuleNode" />
+              <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Eksempelklasser" type="462c0819:PsiDirectoryNode" />
+              <item name="Heapprioritetskø" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Eksempelklasser" type="462c0819:PsiDirectoryNode" />
+              <item name="RSBintre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Eksempelklasser" type="462c0819:PsiDirectoryNode" />
+              <item name="Tabell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Eksempelklasser" type="462c0819:PsiDirectoryNode" />
+              <item name="TabelListe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Eksempelklasser" type="462c0819:PsiDirectoryNode" />
+              <item name="Tabellstack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgdatOppgaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgdatOppgaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Kapittel_5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541362262721" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542103714031" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="C:/HIOA/Programutvikling/SemesteroppgaveV18" />
@@ -374,7 +410,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Ukeoppgaver11">
+  <component name="RunManager" selected="Application.Ukeoppgaver10">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -395,13 +431,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ukeoppgaver11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Kapittel_6.Ukeoppgaver11" />
+    <configuration name="Ukeoppgaver10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kapittel_5.Ukeoppgaver10" />
       <module name="Forelesning1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Kapittel_6.*" />
+          <option name="PATTERN" value="Kapittel_5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -409,13 +445,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ukeoppgaver8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Kapittel_5.Ukeoppgaver8" />
+    <configuration name="Ukeoppgaver11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kapittel_6.Ukeoppgaver11" />
       <module name="Forelesning1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Kapittel_5.*" />
+          <option name="PATTERN" value="Kapittel_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -482,18 +518,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Program" />
-      <item itemvalue="Application.Ukeoppgaver8" />
       <item itemvalue="Application.Week9$BTNode" />
       <item itemvalue="Application.Week9Heap" />
       <item itemvalue="Application.Ukeoppgaver11" />
+      <item itemvalue="Application.Ukeoppgaver10" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ukeoppgaver10" />
         <item itemvalue="Application.Ukeoppgaver11" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.Week9Heap" />
         <item itemvalue="Application.Week9$BTNode" />
-        <item itemvalue="Application.Ukeoppgaver8" />
       </list>
     </recent_temporary>
   </component>
@@ -537,7 +573,11 @@
       <workItem from="1540886478630" duration="804000" />
       <workItem from="1540905750106" duration="137000" />
       <workItem from="1541256831353" duration="2598000" />
-      <workItem from="1541321473639" duration="14185000" />
+      <workItem from="1541321473639" duration="21741000" />
+      <workItem from="1541612210620" duration="42000" />
+      <workItem from="1542010821754" duration="816000" />
+      <workItem from="1542031177302" duration="237000" />
+      <workItem from="1542031460667" duration="2030000" />
     </task>
     <task id="LOCAL-00001" summary="la til metoder fra kap 1.4.1">
       <created>1537261058207</created>
@@ -665,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541340568205</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Jobber med oppgave 6.1.4 - oppgave 7">
+      <created>1541362303560</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1541362303560</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -689,13 +736,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310488000" />
+    <option name="totallyTimeSpent" value="321169000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1926" y="282" width="1153" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29018492" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14570446" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -704,7 +750,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49781114" visible="true" weight="0.31561822" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49781114" weight="0.3443787" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38937092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -712,7 +758,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50218886" side_tool="true" weight="0.4049159" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3298122" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31924883" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.318872" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -722,7 +768,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.32961375" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32859176" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.119791664" />
@@ -804,7 +850,8 @@
     <MESSAGE value="Jobber med ukeoppgaver 8" />
     <MESSAGE value="Legger inn eksempelkode fra forelesning" />
     <MESSAGE value="Jobber med oppgave 6.1.4 - oppgave 5. &#10;Skal implementer metode fjern() for LenketHasTabell" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jobber med oppgave 6.1.4 - oppgave 5. &#10;Skal implementer metode fjern() for LenketHasTabell" />
+    <MESSAGE value="Jobber med oppgave 6.1.4 - oppgave 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jobber med oppgave 6.1.4 - oppgave 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -816,7 +863,7 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java</url>
+          <url>file://$PROJECT_DIR$/src/Eksempelklasser/Tabell/Tabell.java</url>
           <line>370</line>
           <properties />
           <option name="timeStamp" value="12" />
@@ -847,7 +894,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Program.java</url>
-          <line>15</line>
+          <line>5</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -861,9 +908,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/function/Executable.class" />
-    <entry file="file://$PROJECT_DIR$/src/Kap1_2/Delkapittel_2.java" />
-    <entry file="file://$PROJECT_DIR$/src/Kap1_2/Tabell.java" />
     <entry file="file://$PROJECT_DIR$/src/Kapittel_1/test1/kjell.java" />
     <entry file="file://$PROJECT_DIR$/src/AlgdatLive/Week3.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -940,20 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/TabelListe/Beholder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kapittel_1/Tabell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-863">
-          <caret line="452" column="63" selection-start-line="452" selection-start-column="63" selection-end-line="452" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1139,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kapittel_5/Ukeoppgaver8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="192" selection-start-line="192" selection-end-line="192" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AlgdatLive/Week8.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="844">
@@ -1157,9 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="844">
           <caret line="336" column="55" selection-start-line="336" selection-start-column="55" selection-end-line="336" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1177,35 +1197,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding>
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2964#2965#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java">
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_5/Ukeoppgaver8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="316" selection-start-line="316" selection-end-line="316" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="539">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Tabell/Tabell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Heapprioritetskø/PrioritetsKø.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_5/Ukeoppgaver10.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/Heapprioritetskø/HeapPrioritetsKø.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="134" column="46" selection-start-line="134" selection-start-column="46" selection-end-line="134" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/LenketHashTabell/LenketHashTabell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="272" column="21" selection-start-line="272" selection-start-column="21" selection-end-line="272" selection-end-column="21" />
+        <state relative-caret-position="3780">
+          <caret line="259" column="45" selection-start-line="259" selection-start-column="45" selection-end-line="259" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#821#864#0" expanded="true" />
             <element signature="e#4461#4462#0" expanded="true" />
-            <element signature="e#4509#4510#0" expanded="true" />
-            <element signature="e#3122#3165#1" expanded="true" />
-            <element signature="e#6135#6136#0" expanded="true" />
-            <element signature="e#6175#6176#0" expanded="true" />
+            <element signature="e#4508#4509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Oblig2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kapittel_6/Ukeoppgaver11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="325" column="8" selection-start-line="325" selection-start-column="8" selection-end-line="325" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/TabelListe/Beholder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eksempelklasser/RSBintre/RSBinTre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1716#1717#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1864#1865#0" expanded="true" />
+            <element signature="e#1888#1889#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1958#1959#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="e#2088#2089#0" expanded="true" />
           </folding>
         </state>
       </provider>
